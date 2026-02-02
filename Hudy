@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>bloxHub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <nav>
+    <h1>bloxHub</h1>
+    <div>
+      <a href="#home">Home</a>
+      <a href="#features">Features</a>
+      <a href="#games">Games</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero" id="home">
+    <h2>Welcome to bloxHub</h2>
+    <p>Your hub for games, scripts, tools, and more. Explore features and join the community!</p>
+
+    <div class="buttons">
+      <button class="btn-main">Get Started</button>
+      <button class="btn-secondary">Learn More</button>
+    </div>
+  </section>
+
+  <section class="section" id="features">
+    <h3>Features</h3>
+    <div class="cards">
+      <div class="card">
+        <h4>Fast</h4>
+        <p>Loads quickly and runs smooth.</p>
+      </div>
+
+      <div class="card">
+        <h4>Modern</h4>
+        <p>Clean UI with a cool style.</p>
+      </div>
+
+      <div class="card">
+        <h4>Safe</h4>
+        <p>Built to be simple and secure.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="games">
+    <h3>Popular Games</h3>
+    <div class="cards">
+      <div class="card">
+        <h4>Blox Adventures</h4>
+        <p>Explore worlds and collect rewards.</p>
+      </div>
+
+      <div class="card">
+        <h4>Hub Tycoon</h4>
+        <p>Build your empire and upgrade fast.</p>
+      </div>
+
+      <div class="card">
+        <h4>Obby Rush</h4>
+        <p>Race your friends in epic obstacle courses.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h3>Contact</h3>
+    <p>Email: bloxhub@example.com</p>
+  </section>
+
+  <footer>
+    © 2026 bloxHub. All rights reserved.
+  </footer>
+
+</body>
+</g
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: white;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+}
+
+nav h1 {
+  margin: 0;
+  font-size: 24px;
+  color: #38bdf8;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 15px;
+  opacity: 0.9;
+}
+
+nav a:hover {
+  opacity: 1;
+  color: #38bdf8;
+}
+
+/* Hero */
+.hero {
+  padding: 80px 40px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  opacity: 0.8;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Buttons */
+.buttons {
+  margin-top: 30px;
+}
+
+.buttons button {
+  padding: 12px 22px;
+  border: none;
+  border-radius: 10px;
+  margin: 8px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.btn-main {
+  background: #38bdf8;
+  color: black;
+}
+
+.btn-main:hover {
+  background: #0ea5e9;
+}
+
+.btn-secondary {
+  background: rgba(255, 255, 255, 0.12);
+  color: white;
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.small-btn {
+  margin-top: 10px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+/* Sections */
+.section {
+  padding: 60px 40px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.section h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #38bdf8;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.06);
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.10);
+}
+
+.card h4 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.card p {
+  opacity: 0.8;
+  font-size: 14px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.06);
+  margin-top: 40px;
+  opacity: 0.8;
+}
+
+/* Popup */
+.popup-bg {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-box {
+  background: #1e293b;
+  padding: 25px;
+  border-radius: 14px;
+  width: 320px;
+  text-align: center;
+}
+
+/* Login page */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85vh;
+}
+
+.login-box {
+  background: rgba(255, 255, 255, 0.06);
+  padding: 30px;
+  border-radius: 14px;
+  width: 320px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0,0,0,0.4);
+}
+
+.login-box input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+#login-msg {
+  margin-top: 12px;
+  font-size: 14px;
+  opacity: 0.9;
+}
+function showPopup() {
+  document.getElementById("popup").style.display = "flex";
+}
+
+function closePopup() {
+  document.getElementById("popup").style.display = "none";
+}
+
+function goLogin() {
+  window.location.href = "login.html";
+}
+
+function login() {
+  let user = document.getElementById("username").value;
+  let pass = document.getElementById("password").value;
+  let msg = document.getElementById("login-msg");
+
+  if (user === "admin" && pass === "1234") {
+    msg.style.color = "#38bdf8";
+    msg.innerHTML = "✅ Login successful! Redirecting...";
+    setTimeout(() => {
+      window.location.href = "index.html";
+    }, 1500);
+  } else {
+    msg.style.color = "red";
+    msg.innerHTML = "❌ Wrong username or password!";
+  }
+}
